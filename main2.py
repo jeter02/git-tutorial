@@ -18,7 +18,7 @@ def handler(bot, update):
   elif '사진' in text:
     bot.send_photo(chat_id=chat_id, photo=open('img/kirara.jpg', 'rb'))
   else:
-    bot.send_message(chat_id=chat_id, text='몰라')
+    bot.send_message(chat_id=chat_id, text='몰라1')
 
 echo_handler = MessageHandler(Filters.text, handler)
 dispatcher.add_handler(echo_handler)
